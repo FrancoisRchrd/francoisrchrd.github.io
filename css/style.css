@@ -109,8 +109,8 @@ h1, h4, p, span{
 	#up{
 		position: fixed;
 		top: unset;
-		bottom: 3vw;
-		right: 3vw;
+		bottom: 1.5vw;
+		right: 2vw;
 		padding: 8px 10px 8px 10px;
 		background-color: #2d3436;
 		border-radius: 90px;
@@ -647,14 +647,14 @@ h1, h4, p, span{
 
 
 	/* GO TOP BUTTON */
-	#up{ 
+	/* #up{ 
 		right: 30px; 
 		bottom: 30px; 
 		-webkit-transform: scale(1.5);
 		-moz-transform: scale(1.5);
 		-o-transform: scale(1.5);
 		transform: scale(1.5); 
-	}
+	} */
 	/* FIN GO TOP BUTTON */
 
 

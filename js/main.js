@@ -49,7 +49,6 @@
 	nav_menu.addEventListener("click", function(){ 
 		setTimeout(function(){
 			history.pushState(null, null, window.location.href.split('#')[0]);
-			console.log("test");
 		},1);
 	});
 	up_btn.addEventListener("click", function(){ 
