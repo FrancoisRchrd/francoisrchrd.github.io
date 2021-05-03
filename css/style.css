@@ -225,14 +225,14 @@ h1, h4, p, span{
 		transition: 2s ease;
 	}
 	#bitcoin{
-		top: 20%;
+		top: 30%;
 		left: 10%;
-		width: 5%;
+		width: 8%;
 		height: auto;
 	}
 	#doge{
-		top: 0%;
-		right: 0%;
+		top: 12%;
+		right: 35%;
 		width: 5%;
 		height: auto;
 	}
