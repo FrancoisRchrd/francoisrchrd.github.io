@@ -224,7 +224,7 @@ h1, h4, p, span{
 		-o-transition: 2s ease;
 		transition: 2s ease;
 	}
-	#bitcoin{
+	#nocticrew{
 		top: 30%;
 		left: 10%;
 		width: 8%;
@@ -232,7 +232,7 @@ h1, h4, p, span{
 	}
 	#doge{
 		top: 12%;
-		right: 35%;
+		left: 35%;
 		width: 5%;
 		height: auto;
 	}
