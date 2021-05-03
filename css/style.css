@@ -485,6 +485,12 @@ h1, h4, p, span{
 
 
 /*PROJECTS*/
+	#nocticrew_img_proj{
+		-webkit-transform: rotate(0deg) !important;
+		-moz-transform: rotate(0deg) !important;
+		-o-transform: rotate(0deg) !important;
+		transform: rotate(0deg) !important; 
+	}
 	#ilemGroup_show{ width: 20%; }
 	#ilemGroup_show>img{ width: 100%; }
 	#annotateME_demo{
