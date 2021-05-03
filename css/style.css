@@ -224,9 +224,15 @@ h1, h4, p, span{
 		-o-transition: 2s ease;
 		transition: 2s ease;
 	}
-	#smashBall{
+	#bitcoin{
 		top: 20%;
 		left: 10%;
+		width: 5%;
+		height: auto;
+	}
+	#doge{
+		top: 0%;
+		right: 0%;
 		width: 5%;
 		height: auto;
 	}
