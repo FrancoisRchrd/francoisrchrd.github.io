@@ -485,12 +485,6 @@ h1, h4, p, span{
 
 
 /*PROJECTS*/
-	#nocticrew_img_proj{
-		-webkit-transform: rotate(0deg) !important;
-		-moz-transform: rotate(0deg) !important;
-		-o-transform: rotate(0deg) !important;
-		transform: rotate(0deg) !important; 
-	}
 	#ilemGroup_show{ width: 20%; }
 	#ilemGroup_show>img{ width: 100%; }
 	#annotateME_demo{
@@ -761,6 +755,20 @@ h1, h4, p, span{
 		margin-top: 15%;
 	}
 	/* STUDIES & EXPERIENCES */
+
+	/* PROJECTS */
+	#nocticrew_img_proj{
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg); 
+	}
+	#nocticrew_img_proj:hover{
+		-webkit-transform: scale(1.2) rotate(0deg);
+		-moz-transform: scale(1.2) rotate(0deg);
+		-o-transform: scale(1.2) rotate(0deg);
+		transform: scale(1.2) rotate(0deg); 
+	}
 
 	.references-content{ font-size: 1em; }
 }
