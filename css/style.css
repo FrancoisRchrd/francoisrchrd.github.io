@@ -224,10 +224,16 @@ h1, h4, p, span{
 		-o-transition: 2s ease;
 		transition: 2s ease;
 	}
-	#smashBall{
-		top: 20%;
+	#doge{
+		top: 25%;
 		left: 10%;
-		width: 5%;
+		width: 8%;
+		height: auto;
+	}
+	#nocticrew{
+		top: 15%;
+		left: 30%;
+		width: 8%;
 		height: auto;
 	}
 	#bostonDynamics{
@@ -749,6 +755,20 @@ h1, h4, p, span{
 		margin-top: 15%;
 	}
 	/* STUDIES & EXPERIENCES */
+
+	/* PROJECTS */
+	#nocticrew_img_proj{
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg); 
+	}
+	#nocticrew_img_proj:hover{
+		-webkit-transform: scale(1.2) rotate(0deg);
+		-moz-transform: scale(1.2) rotate(0deg);
+		-o-transform: scale(1.2) rotate(0deg);
+		transform: scale(1.2) rotate(0deg); 
+	}
 
 	.references-content{ font-size: 1em; }
 }
