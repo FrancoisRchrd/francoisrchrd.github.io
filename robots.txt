@@ -1,5 +1,6 @@
 User-agent: *
-Allow:/data/
+Allow:/data/portrait.png
+Disallow:/data/
 Disallow:/css/
 Disallow:/js/
 Allow:/en/
