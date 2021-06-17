@@ -3,3 +3,4 @@ Disallow:/data/
 Disallow:/css/
 Disallow:/js/
 Allow:/en/
+Allow:/data/portrait.png
