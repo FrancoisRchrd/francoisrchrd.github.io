@@ -1,13 +1,15 @@
-<!DOCTYPE html lang="en" xmlns:og="http://ogp.me/ns#">
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="François RICHARD">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="icon" type="image/png" href="../data/favicon.png" />
-	<link rel="apple-touch-icon" href="../data/favicon.png" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400|Staatliches|Fredoka+One|Roboto+Condensed" rel="stylesheet">
-	<link rel="canonical" href="https://francois-richard.fr/en/"/>
+	<link rel="icon" type="image/png" href="../data/favicon.png">
+	<link rel="apple-touch-icon" href="../data/favicon.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400|Staatliches|Fredoka+One|Roboto+Condensed">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="canonical" href="https://francois-richard.fr/en/">
 	
 	<!-- HTML Meta Tags -->
 	<title>François RICHARD - IT Student at ÉTS Montreal</title>
@@ -22,7 +24,7 @@
 	<meta property="og:site_name" content="francois-richard">
 
 	<!-- Twitter Meta Tags -->
-	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:card" content="summary">
 	<meta property="twitter:domain" content="francois-richard.fr">
 	<meta property="twitter:url" content="https://francois-richard.fr/en/">
 	<meta name="twitter:title" content="François RICHARD - IT Student at ÉTS Montreal">
@@ -83,8 +85,8 @@
 
 					<h4 class="about-precision">JOB OBJECTIVE</h4>
 					<p>
-						What  interests  me  the  most  about  IT  is  the  opportunity  to  design  and implement 
-						creative solutions that make the user experience as intuitive and enjoyable as possible for 
+						What interests me the most about IT is the opportunity to design and implement creative
+						solutions that make the user experience as intuitive and enjoyable as possible for 
 						the largest audience.
 						<br><br>
 						I can be part of a team and get involved in all phases of application design and development.
@@ -561,7 +563,7 @@
 				<p class="unselectable"><img src="../data/email.png" class="coord_icons" alt="email-icon"> francois.richard.2@ens.etsmtl.ca</p> 
 			</div>
 		</footer>
-		<p id="copyright">© 2021 &bull; François RICHARD &bull; All rights reserved </p>
+		<p id="copyright">© <?php echo date('Y'); ?> François RICHARD &bull; All rights reserved </p>
 		<a id="up" href="#about"><img src="../data/up.png" alt="Go top button" title="Go top"></a>
 
 	</section>	

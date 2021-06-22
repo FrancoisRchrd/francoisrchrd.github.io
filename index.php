@@ -1,14 +1,15 @@
-<!DOCTYPE html lang="fr" xmlns:og="http://ogp.me/ns#">
+<!DOCTYPE html >
+<html lang="fr" xmlns:og="http://ogp.me/ns#">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="François RICHARD">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="François RICHARD">
+	<link rel="icon" type="image/png" href="data/favicon.png">
+	<link rel="apple-touch-icon" href="data/favicon.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400|Staatliches|Fredoka+One|Roboto+Condensed">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="icon" type="image/png" href="data/favicon.png" />
-	<link rel="apple-touch-icon" href="data/favicon.png" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400|Staatliches|Fredoka+One|Roboto+Condensed" rel="stylesheet">
-	<link rel="canonical" href="https://francois-richard.fr/"/>
+	<link rel="canonical" href="https://francois-richard.fr/">
 
 	<!-- HTML Meta Tags -->
 	<title>François RICHARD - Étudiant en informatique à l'ÉTS Montréal</title>
@@ -563,7 +564,7 @@
 				<p class="unselectable"><img src="data/email.png" class="coord_icons" alt="email-icon"> francois.richard.2@ens.etsmtl.ca</p>
 			</div>
 		</footer>
-		<p id="copyright">© 2021 &bull; François RICHARD &bull; Tous droits réservés </p>
+		<p id="copyright">© <?php echo date('Y'); ?> François RICHARD &bull; Tous droits réservés </p>
 		<a id="up" href="#a-propos"><img src="data/up.png" alt="Go top button" title="Retour en haut"></a>
 
 	</section>	
