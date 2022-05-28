@@ -119,10 +119,10 @@
 			localStorage.setItem('darkmode_used', 'false');
 		}
 		else{
-			html.style.backgroundColor = "#313133";
+			html.style.backgroundColor = "#282823";
 			darklight_colorSwitch(name_content, "color", "#f5f6fa");
 			darklight_colorSwitch(h1, "color","#747d8c");
-			darklight_colorSwitch(h4, "color","#747d8c");
+			darklight_colorSwitch(h4, "color","#ee5a24");
 			darklight_colorSwitch(p, "color", "#f5f6fa");
 			darklight_colorSwitch(span, "color", "#f5f6fa");
 			darklight_colorSwitch(para_bar, "borderLeft", "3px solid #747d8c");
@@ -167,14 +167,21 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
 /* Animation Overlay */
-	setTimeout(function(){
+	function caroussel_overlay() {
+		let visibility_height = document.body.scrollHeight / overlay_img.length;
+		let remaining_height = document.body.scrollHeight - window.pageYOffset;
+		let part_of_page = (remaining_height / visibility_height)-1;
+		
 		for(let i=0; i<overlay_img.length; i++){
-			setTimeout(function(){
-				overlay_img[i].style.opacity = "1";		
-			},600*i);			
+			if(part_of_page <= i && part_of_page > i-1)
+				overlay_img[i].style.opacity = 1;
+			else
+				overlay_img[i].style.opacity = 0;
 		}
-	},500);
-
+	};
+	window.onload = window.onscroll = function(e) {
+		caroussel_overlay();
+	};
 
 
 
