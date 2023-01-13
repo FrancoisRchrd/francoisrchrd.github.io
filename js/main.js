@@ -15,6 +15,7 @@
 	let nav_menu = document.getElementById("nav-menu");
 	let darklight_btn = document.getElementById("darklight-btn");
 	let darklight_img = darklight_btn.querySelector("img");
+	let ubisoft_logo = document.getElementById("ubisoft_logo");
 	let langage_btn = document.getElementById("langage-btn"); 
 	let up_btn = document.getElementById("up");
 
@@ -101,7 +102,7 @@
 /* Dark/Light mode color switch */
 	function darkLight_colorSwitch() {
 		darklight_btn.classList.toggle('light');
-
+		display_ubisoft_logo();
 
 		if (darklight_btn.classList.contains('light')) {
 			html.style.backgroundColor = "#f5f6fa"; 
@@ -137,6 +138,26 @@
 
 
 
+/* Display Ubisoft logo*/
+	function display_ubisoft_logo() {
+		let new_ubi_logo_src = "../data/Ubisoft_Montreal_";
+	
+		if(window.innerWidth > 768) {
+			new_ubi_logo_src += "LOGO_";
+		} else {
+			new_ubi_logo_src += "HORIZONTAL_LOGO_";
+		}
+	
+		if(darklight_btn.classList.contains('light')) {
+			new_ubi_logo_src += "BLACK.png";
+		} else {
+			new_ubi_logo_src += "WHITE.png";
+		}
+
+		ubisoft_logo.src = new_ubi_logo_src;
+	}
+
+
 
 document.addEventListener("DOMContentLoaded",function(){
 /* Go Top a every refresh */
@@ -170,13 +191,13 @@ document.addEventListener("DOMContentLoaded",function(){
 	function caroussel_overlay() {
 		let visibility_height = document.body.scrollHeight / overlay_img.length;
 		let remaining_height = document.body.scrollHeight - window.pageYOffset;
-		let part_of_page = (remaining_height / visibility_height)-1;
+		// let part_of_page = (remaining_height / visibility_height)-1;
 		
 		for(let i=0; i<overlay_img.length; i++){
-			if(part_of_page <= i && part_of_page > i-1)
+			// if(part_of_page <= i && part_of_page > i-1)
 				overlay_img[i].style.opacity = 1;
-			else
-				overlay_img[i].style.opacity = 0;
+			// else
+			// 	overlay_img[i].style.opacity = 0;
 		}
 	};
 	window.onload = window.onscroll = function(e) {
@@ -408,6 +429,9 @@ document.addEventListener("DOMContentLoaded",function(){
 	});
 
 
+
+/* Display Ubisoft Logo */
+	display_ubisoft_logo();
 
 
 /* Konami code */
