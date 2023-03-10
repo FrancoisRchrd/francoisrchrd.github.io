@@ -423,16 +423,43 @@ h1, h4, p, span{
 
 
 /*SKILLS*/
-	#skills_neg_marg{
+	/* #skills_neg_marg{
 		margin-bottom: 0px;
 	}
 	.skills-box{
 		display: inline-block;
 		width: 45%;
 		margin: 2%;
+	} */
+	.skills-container{ 
+		display: flex; 
+		flex-wrap: wrap;
 	}
-	.skills-part{ display: flex; }
-	.skills-part-icon{
+	.skills-category{
+		display: inline-block;
+		margin-right: 25px;
+		margin-bottom: 35px;
+	}
+	.skills-item{
+		display: flex;
+		align-items: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.skills-item > img{
+		width: 28px;
+		height: 28px;
+	}
+	.skills-item > span{
+		margin-left: 8px;
+		font-size: 1.1em;
+		font-family: 'Righteous', sans-serif;
+	}
+	.flag {
+		height: auto !important;
+	}
+	
+	/* .skills-part-icon{
 		width: 64px;
 		height: 64px;
 		margin-top: 10px;
@@ -443,6 +470,7 @@ h1, h4, p, span{
 		font-size: 0.65em;
 		text-align: center;
 	}
+	
 	.percent {
 		display: block;
 		width: 0%;
@@ -480,7 +508,7 @@ h1, h4, p, span{
 		display: inline-block;
 		min-width: 90px;
 		font-size: 0.9em;
-	}
+	}*/
 /*FIN SKILLS*/
 
 
