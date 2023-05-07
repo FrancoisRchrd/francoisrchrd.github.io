@@ -204,10 +204,11 @@ h1, h4, p, span{
 
 /*OVERLAY*/
 	.overlay{
+		display: none;
 		order: 1;
 		top: 80px;
 		left: 0px;
-		width: 40vw;
+		width: 0;
 		height: 100vh;
 	}
 	.overlay>img{
@@ -255,11 +256,12 @@ h1, h4, p, span{
 	.content{
 		order: 2;
 		position: relative;
-		width: 60vw;
+		width: 100vw;
 		height: 100vh;
+		padding: 0;
 	}
 	.part{
-		width: 90%;
+		width: 80%;
 		margin: auto;
 		z-index: 10;
 	}
@@ -274,7 +276,7 @@ h1, h4, p, span{
 	.name-content-bis{
 		position: relative;
 		width: 70%;
-		margin: -40px 0px 40px 40px;
+		margin: -20px 0px 40px 50px;
 		font-family: 'Fredoka One', sans-serif;
 		font-size: 4em;
 		color: #ee5a24;
@@ -285,7 +287,7 @@ h1, h4, p, span{
 
 /*ABOUT*/
 	#about, #a-propos{ 
-		padding-top: 80px; 
+		padding-top: 120px; 
 		text-align: justify;
 		font-size: 1em;
 	}
@@ -299,10 +301,12 @@ h1, h4, p, span{
 		height: auto;
 	}
 	.about_name{
-		color: grey;
-		font-size: 2.5em;
+		color: #313135;
+		font-weight: bolder;
+		font-size: 3em;
 	}
 	.about_function{
+		color: #ee5a24;
 		font-size: 2em;
 		text-align: left;
 	}
@@ -437,7 +441,8 @@ h1, h4, p, span{
 	}
 	.skills-category{
 		display: inline-block;
-		margin-right: 25px;
+		margin-right: 2.5vw;
+		margin-left: 2.5vw;
 		margin-bottom: 35px;
 	}
 	.skills-item{
@@ -532,6 +537,15 @@ h1, h4, p, span{
 
 
 /*REFERENCES*/
+	.references-items{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+    .reference-paraph{
+		width: 45%;
+		font-size: 1em;
+	}
 	.references-img{ width: 20%; }
 	.references-img>img{
 		border-radius: 90%;
@@ -571,7 +585,7 @@ h1, h4, p, span{
 		-o-transition: 1.5s ease;
 		transition: 1.5s ease;
 	}
-	.social>img{
+	.social>img, .social>i{
 		width: 100%;
 		height: 100%;
 	}
@@ -580,14 +594,29 @@ h1, h4, p, span{
 	#coord_title, #links_title{
 		font-size: 1.4em;
 		font-family: 'Staatliches', sans-serif; 
-		color: #747d8c !important; 
+		color: #f5f6fa !important; 
 	}
-	#coord>p,#soon>p{ color: #ee5a24 !important; }
-	#soon{ height: auto; }
+	#coord>p,#soon>p, #soon>p>span{ color: #ee5a24 !important; font-weight: 700;}
+	#soon{ height: auto; align-items: center; }
 	#soon>p{
 		text-align: center;
 		font-family: 'Staatliches', sans-serif;
 		font-size: 2em;
+	}
+	.btn-cv {
+		-webkit-border-radius: 12;
+		-moz-border-radius: 12;
+		border-radius: 12px;
+		color: #ffffff;
+		font-size: 20px;
+		background: #ee5a24;
+		padding: 10px 20px 10px 20px;
+		margin: auto;
+		text-decoration: none;
+	}
+	.btn-cv:hover {
+		background: #bb461c;
+		text-decoration: none;
 	}
 	#copyright{
 		position: relative;
@@ -720,6 +749,11 @@ h1, h4, p, span{
 	}
 	#annotateME_demo>source{ width: 100%; }
 	/* FIN PROJECTS */
+
+	.reference-paraph{
+		width: 100%;
+		font-size: 1em;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -730,9 +764,8 @@ h1, h4, p, span{
 
 	.name-content{ font-size: 3em; }
 	.name-content-bis{
-		margin: -30px 0px 40px 20px;
+		margin: -10px 0px 20px 20px;
 		font-size: 2.5em;
-		opacity: 0.5;	
 	}
 
 	/* ABOUT */
@@ -818,9 +851,8 @@ h1, h4, p, span{
 @media only screen and (max-width: 380px) {
 	.name-content{ font-size: 2.3em; }
 	.name-content-bis{
-		margin: -20px 0px 40px 0px;
-		font-size: 1.8em;
-		opacity: 0.5;	
+		margin: -10px 0px 10px 30px;
+		font-size: 1.8em;	
 	}
 	#coord{ font-size: 0.6em; }
 }

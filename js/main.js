@@ -85,18 +85,18 @@
 
 
 /* Social networks zoom loop */
-	function socialLoop() {
-    	for(let i=0; i<social.length;i++){
-			setTimeout(function(){
-				changeTransform(social[i], "scale(1.5)");
+	// function socialLoop() {
+    // 	for(let i=0; i<social.length;i++){
+	// 		setTimeout(function(){
+	// 			changeTransform(social[i], "scale(1.5)");
 
-				setTimeout(function(){
-					changeTransform(social[i], "scale(1)");
-				},2000);
+	// 			setTimeout(function(){
+	// 				changeTransform(social[i], "scale(1)");
+	// 			},2000);
 
-			},2000*i);			
-		}
-	};
+	// 		},2000*i);			
+	// 	}
+	// };
 
 
 /* Dark/Light mode color switch */
@@ -120,7 +120,7 @@
 			localStorage.setItem('darkmode_used', 'false');
 		}
 		else{
-			html.style.backgroundColor = "#282823";
+			html.style.backgroundColor = "#181a1b";
 			darklight_colorSwitch(name_content, "color", "#f5f6fa");
 			darklight_colorSwitch(h1, "color","#747d8c");
 			darklight_colorSwitch(h4, "color","#ee5a24");
@@ -335,9 +335,9 @@ document.addEventListener("DOMContentLoaded",function(){
 		}
 		for(let i=0; i<nav.length-1;i++){
 			/* Part subtitle translation */
-			if(window.innerWidth > 1200){
-				changeTransform(name_content_bis[i], 'translateX('+Math.abs(window.pageYOffset)/200+'%) translateY('+Math.abs(window.pageXOffset)/20+'%)');
-			}
+			// if(window.innerWidth > 1200){
+			// 	changeTransform(name_content_bis[i], 'translateX('+Math.abs(window.pageYOffset)/200+'%) translateY('+Math.abs(window.pageXOffset)/20+'%)');
+			// }
 			/* If we are on a part => change the nav button color */
 			if (window.innerWidth > 1200 && part[i].getBoundingClientRect().y < 400 && -part[i].getBoundingClientRect().y < part[i].offsetHeight-400){
 				nav[i].style.backgroundColor = "#ee5a24";
@@ -411,10 +411,10 @@ document.addEventListener("DOMContentLoaded",function(){
 		}
 	});
 	/* Social networks loop */
-	setTimeout(function(){
-		socialLoop();
-		setInterval(socialLoop, 10000);
-	}, 4000);
+	// setTimeout(function(){
+	// 	socialLoop();
+	// 	setInterval(socialLoop, 10000);
+	// }, 4000);
 
 
 
