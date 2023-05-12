@@ -410,7 +410,7 @@ h1, h4, p, span{
 		padding: 5px 10px 5px 10px;
 		margin: 5px 10px 5px 10px;
 		text-align: initial;
-		color: #313133 !important;
+		color: #313133;
 		background-color: #feca57; 
 		-webkit-transition: .2s ease;
 		-moz-transition: .2s ease;

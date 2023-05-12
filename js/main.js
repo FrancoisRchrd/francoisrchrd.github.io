@@ -15,9 +15,13 @@
 	let nav_menu = document.getElementById("nav-menu");
 	let darklight_btn = document.getElementById("darklight-btn");
 	let darklight_img = darklight_btn.querySelector("img");
-	let ubisoft_logo = document.getElementById("ubisoft_logo");
 	let langage_btn = document.getElementById("langage-btn"); 
 	let up_btn = document.getElementById("up");
+
+	let ubisoft_logo = document.getElementById("ubisoft_logo");
+	let ets_logo = document.getElementById("ets_logo");
+	let iut_logo = document.getElementsByClassName("iut_logo");
+	let ilemgroup_logo = document.getElementById("ilemgroup_logo");
 
 	let name_content = document.getElementsByClassName("name-content");
 	let name_content_bis = document.getElementsByClassName("name-content-bis");
@@ -107,31 +111,43 @@
 		if (darklight_btn.classList.contains('light')) {
 			html.style.backgroundColor = "#f5f6fa"; 
 			darklight_colorSwitch(name_content, "color", "#313133");
-			darklight_colorSwitch(h1, "color","#313133");
+			// darklight_colorSwitch(h1, "color","#313133");
 			darklight_colorSwitch(h4, "color","#313133");
 			darklight_colorSwitch(p, "color","#313133");
 			darklight_colorSwitch(span, "color","#313133");
 			darklight_colorSwitch(para_bar, "borderLeft", "3px solid #313133");
 			darklight_colorSwitch(stuff_done, "backgroundColor","#feca57");
+			darklight_colorSwitch(stuff_done, "color","#313133");
 			darklight_colorSwitch(para_desc, "color", "#313133");
-			darklight_colorSwitch(about_name, "color", "grey");
+			darklight_colorSwitch(about_name, "color", "#313135");
 			darklight_colorSwitch(up_btn, "backgroundColor", "#2d3436");
 			darklight_img.src = "../data/moon.png";
+			ets_logo.src = "../data/ETS_Logo_BLACK.png";
+			ilemgroup_logo.src = "../data/ilemgroup_Logo_BLACK.png";
+			for(let i=0; i<iut_logo.length;i++){
+				iut_logo[i].src = "../data/iut_logo_BLACK.png";
+			}
 			localStorage.setItem('darkmode_used', 'false');
 		}
 		else{
 			html.style.backgroundColor = "#181a1b";
 			darklight_colorSwitch(name_content, "color", "#f5f6fa");
-			darklight_colorSwitch(h1, "color","#747d8c");
+			// darklight_colorSwitch(h1, "color","#747d8c");
 			darklight_colorSwitch(h4, "color","#ee5a24");
 			darklight_colorSwitch(p, "color", "#f5f6fa");
 			darklight_colorSwitch(span, "color", "#f5f6fa");
 			darklight_colorSwitch(para_bar, "borderLeft", "3px solid #747d8c");
-			darklight_colorSwitch(stuff_done, "backgroundColor","#e67e22");
+			darklight_colorSwitch(stuff_done, "backgroundColor","#b33a0e");
+			darklight_colorSwitch(stuff_done, "color","#f5f6fa");
 			darklight_colorSwitch(para_desc, "color", "#f5f6fa");
 			darklight_colorSwitch(about_name, "color", "#f5f6fa");
 			darklight_colorSwitch(up_btn, "backgroundColor", "#ee5a24");
 			darklight_img.src = "../data/sun.png";
+			ets_logo.src = "../data/ETS_Logo_WHITE.png";
+			ilemgroup_logo.src = "../data/ilemgroup_Logo_WHITE.png";
+			for(let i=0; i<iut_logo.length;i++){
+				iut_logo[i].src = "../data/iut_logo_WHITE.png";
+			}
 			localStorage.setItem('darkmode_used', 'true');
 		}
 	}
