@@ -831,6 +831,23 @@ h1, h4, p, span{
 		transform: scale(1.2) rotate(0deg); 
 	}
 
+	#esports_img_proj{
+		-webkit-transform: scale(0.8) rotate(0deg);
+		-moz-transform: scale(0.8) rotate(0deg);
+		-o-transform: scale(0.8) rotate(0deg);
+		transform: scale(0.8) rotate(0deg); 
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg); 
+	}
+	#esports_img_proj:hover{
+		-webkit-transform: scale(1.2) rotate(0deg);
+		-moz-transform: scale(1.2) rotate(0deg);
+		-o-transform: scale(1.2) rotate(0deg);
+		transform: scale(1.2) rotate(0deg); 
+	}
+
 	.references-content{ font-size: 1em; }
 }
 
