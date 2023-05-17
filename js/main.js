@@ -125,7 +125,7 @@
 			ets_logo.src = "../data/ETS_Logo_BLACK.png";
 			ilemgroup_logo.src = "../data/ilemgroup_Logo_BLACK.png";
 			for(let i=0; i<iut_logo.length;i++){
-				iut_logo[i].src = "../data/iut_logo_BLACK.png";
+				iut_logo[i].src = "../data/IUT_Logo_BLACK.png";
 			}
 			localStorage.setItem('darkmode_used', 'false');
 		}
@@ -146,7 +146,7 @@
 			ets_logo.src = "../data/ETS_Logo_WHITE.png";
 			ilemgroup_logo.src = "../data/ilemgroup_Logo_WHITE.png";
 			for(let i=0; i<iut_logo.length;i++){
-				iut_logo[i].src = "../data/iut_logo_WHITE.png";
+				iut_logo[i].src = "../data/IUT_Logo_WHITE.png";
 			}
 			localStorage.setItem('darkmode_used', 'true');
 		}
