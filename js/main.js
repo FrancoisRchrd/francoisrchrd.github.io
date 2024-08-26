@@ -18,10 +18,11 @@
 	let langage_btn = document.getElementById("langage-btn"); 
 	let up_btn = document.getElementById("up");
 
-	let ubisoft_logo = document.getElementById("ubisoft_logo");
+	let ubisoft_logo = document.getElementsByClassName("ubisoft_logo");
 	let ets_logo = document.getElementById("ets_logo");
 	let iut_logo = document.getElementsByClassName("iut_logo");
 	let ilemgroup_logo = document.getElementById("ilemgroup_logo");
+	let luqse_logo = document.getElementById("luqse_logo");
 
 	let name_content = document.getElementsByClassName("name-content");
 	let name_content_bis = document.getElementsByClassName("name-content-bis");
@@ -124,6 +125,7 @@
 			darklight_img.src = "../data/moon.png";
 			ets_logo.src = "../data/ETS_Logo_BLACK.png";
 			ilemgroup_logo.src = "../data/ilemgroup_Logo_BLACK.png";
+			luqse_logo.src = "../data/luqse_COLOR.png";
 			for(let i=0; i<iut_logo.length;i++){
 				iut_logo[i].src = "../data/IUT_Logo_BLACK.png";
 			}
@@ -145,6 +147,7 @@
 			darklight_img.src = "../data/sun.png";
 			ets_logo.src = "../data/ETS_Logo_WHITE.png";
 			ilemgroup_logo.src = "../data/ilemgroup_Logo_WHITE.png";
+			luqse_logo.src = "../data/luqse_WHITE.png";
 			for(let i=0; i<iut_logo.length;i++){
 				iut_logo[i].src = "../data/IUT_Logo_WHITE.png";
 			}
@@ -170,7 +173,9 @@
 			new_ubi_logo_src += "WHITE.png";
 		}
 
-		ubisoft_logo.src = new_ubi_logo_src;
+		for(let i=0; i<ubisoft_logo.length;i++){
+			ubisoft_logo[i].src = new_ubi_logo_src;
+		}
 	}
 
 
