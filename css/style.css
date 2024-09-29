@@ -304,8 +304,16 @@ h1, h4, p, span{
 		color: #313135;
 		font-weight: bolder;
 		font-size: 3em;
+		display: flex;
+		align-items: center;
 	}
-	.about_function{
+	#pronouns{
+		display: inline-block;
+		font-size: 0.7em;
+		font-style: italic;
+		margin-left: 0.4em;
+	}
+	.about_position{
 		color: #ee5a24;
 		font-size: 2em;
 		text-align: left;

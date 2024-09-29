@@ -1,5 +1,5 @@
 User-agent: *
-Allow:/data/portrait.png
+Allow:/data/portrait.jpg
 Disallow:/data/
 Disallow:/css/
 Disallow:/js/
